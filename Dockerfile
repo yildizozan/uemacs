@@ -18,3 +18,4 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
  && rm -rf /var/lib/apt/lists/*
 COPY --from=build /usr/local/ /usr/local/
 CMD ["em"]
+WORKDIR /app
